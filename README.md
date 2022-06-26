@@ -51,6 +51,11 @@ python run_pplm_various_lm.py \
      --output_dir /path/to/output/pplm/
 ```
 
+#### Note
+
+The results presented in our paper were obtained using version 4.8.1 of HuggingFace Transformers in Seq2SeqLM finetuning.
+We use one NVIDIA V100 GPU for each training and each inference.
+
 ## Citation
 
 If you find this repository helpful for your work, please consider citing the related paper.
