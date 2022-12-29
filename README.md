@@ -9,6 +9,22 @@ Our implementation is based on the PPLM codes distributed in <https://github.com
 
 Note: in the Transformers library, the PPLM codes were placed in <https://github.com/huggingface/transformers/tree/master/examples/text-generation/pplm> previously. Now it is replaced in <https://github.com/huggingface/transformers/tree/main/examples/research_projects>.
 
+## Correction of the Paper
+
+### Lack of footnote 10
+
+We had intended to add the footnote to explain the strange time consuming of XLM-ProphetNet large.
+The footnote number "10" was displayed (in Table 4), but due to our misunderstanding of the tex specification, the footnote text was not displayed.
+We show the footnote text below.
+
+```tex
+\footnote{The runtime of ``XLM-ProphetNet large'' was very long compared to the others, probably due to failure in allocating GPU memory. It is not considered to have any effect on the generated statements, but is included as is for reference.}
+```
+
+### Model name misspelled
+
+We mistakenly wrote `PEGASUS large` in Tables 3 and 4 as `20220410_003_pegasus_large`, which includes the ID for managing experiments. They should correctly be written as PEGASUS large, as with the other models.
+
 ## How to use our modified PPLM
 
 ### Seq2SeqLM Story Completion
